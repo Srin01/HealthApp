@@ -47,24 +47,24 @@
                 android:src="@drawable/bmical"/>
 
             <LinearLayout
-                android:layout_marginTop="50dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="102dp"
+                android:layout_marginTop="50dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/bmiIndex"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25sp"
-                    android:text="BMI Index"/>
+                    android:text="BMI Index"
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/bmiGrade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="Grade"/>
+                    android:text="Grade"
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -89,24 +89,24 @@
                 android:src="@drawable/water"/>
 
             <LinearLayout
-                android:layout_marginTop="50dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="107dp"
+                android:layout_marginTop="50dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/waterIndex"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25sp"
-                    android:text="Water glass"/>
+                    android:text="Water glass"
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/waterGrade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:text="Grade"/>
+                    android:text="Grade"
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
