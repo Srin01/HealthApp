@@ -26,9 +26,5 @@ public class MainActivity extends AppCompatActivity {
         imageViewHeader = findViewById(R.id.imageView_header);
         toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
-        bmiImage = findViewById(R.id.profile_image1);
-        waterIndex = findViewById(R.id.profile_image2);
-        calorieIndex = findViewById(R.id.profile_image3);
-        distance = findViewById(R.id.profile_image4);
     }
 }

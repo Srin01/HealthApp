@@ -20,99 +20,179 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/header"
+        android:src="@drawable/bg_header"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolBar"
         />
 
     <LinearLayout
-        android:id="@+id/linear1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_header"
-        android:layout_marginTop="40dp">
+        android:id="@+id/linearBmi"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toStartOf="@id/linearWater"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_header">
 
-        <ImageView
-            android:id="@+id/profile_image1"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginEnd="50dp"
-            android:src="@drawable/green" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image2"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_marginStart="25dp"
-            android:src="@drawable/red"/>
+            <ImageView
+                android:id="@+id/bmiImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bmical"/>
 
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bmiIndex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="BMI Index"/>
+
+                <TextView
+                    android:id="@+id/bmiGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Grade"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linear2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/linear1"
-        android:layout_marginTop="40dp">
+        android:id="@+id/linearWater"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toEndOf="@id/linearBmi"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_header">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            tools:context=".MainActivity">
-            <ImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image3"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp"
-                android:src="@drawable/blue"/>
-
-            <TextView
-                android:id="@+id/text1"
-                android:textStyle="bold|italic"
-                android:textSize="24sp"
-                android:padding="4dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="16sp"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            tools:context=".MainActivity">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <ImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image4"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginStart="25dp"
-                android:src="@drawable/blue"/>
+                android:id="@+id/waterImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/water"/>
 
-            <TextView
-                android:id="@+id/text2"
-                android:textStyle="bold|italic"
-                android:textSize="24sp"
-                android:padding="4dp"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="16sp"/>
-        </RelativeLayout>
+                android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/waterIndex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Water glass"/>
+
+                <TextView
+                    android:id="@+id/waterGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Grade"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearcalorie"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toStartOf="@id/linearDistance"
+        app:layout_constraintTop_toBottomOf="@+id/linearBmi">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/calorieImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/calorie"/>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/calorieIndex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Calorie "/>
+
+                <TextView
+                    android:id="@+id/calorieGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Grade"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDistance"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toEndOf="@id/linearcalorie"
+        app:layout_constraintTop_toBottomOf="@+id/linearWater">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/distanceImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/distancewaled"/>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/distanceIndex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Distance"/>
+
+                <TextView
+                    android:id="@+id/distanceGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Grade"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
