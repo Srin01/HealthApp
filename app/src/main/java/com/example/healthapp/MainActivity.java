@@ -20,11 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bindViews();
+        Toolbar toolbar=findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     private void bindViews() {
         imageViewHeader = findViewById(R.id.imageView_header);
-        toolbar = findViewById(R.id.toolBar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 }
